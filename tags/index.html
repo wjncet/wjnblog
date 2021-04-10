@@ -176,7 +176,7 @@
                 
 
 <div class="text-center tagcloud">
-  <a href="/wjnblog/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="font-size: 15px; color: #bbe">日本語</a>
+  <a href="/wjnblog/tags/%E6%9D%82%E8%B0%88/" style="font-size: 15px; color: #bbe">杂谈</a> <a href="/wjnblog/tags/%E9%9B%91%E8%AB%87/" style="font-size: 15px; color: #bbe">雑談</a>
 </div>
 
               </div>
@@ -320,6 +320,24 @@
 <!-- 主题的启动项 保持在最底部 -->
 <script  src="/wjnblog/js/boot.js" ></script>
 
+
+
+
+  <script>
+    (function(d,t) {
+      var BASE_URL="https://app.chatwoot.com";
+      var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=BASE_URL+"/packs/js/sdk.js";
+      s.parentNode.insertBefore(g,s);
+      g.onload=function(){
+        window.chatwootSDK.run({
+          websiteToken: 'RTcXzTZCmmbniKYzAUJ1UFEt',
+          baseUrl: BASE_URL
+        })
+      }
+    })(document,"script");
+  </script>
+  
 
 </body>
 </html>

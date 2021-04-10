@@ -172,13 +172,19 @@
                 
 
 <div class="list-group">
-  <p class="h4">1 posts in total.</p>
+  <p class="h4">2 posts in total.</p>
   <hr>
   
   
     
       
       <p class="h5">2021</p>
+    
+    <a href="/wjnblog/2021/04/09/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E6%88%90%E5%8A%9F/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">个人网站搭建成功</span>
+      <time style="float: right;">04-09</time>
+    </a>
+  
     
     <a href="/wjnblog/2021/04/09/%E5%80%8B%E4%BA%BA%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89%E6%88%90%E5%8A%9F/" class="list-group-item list-group-item-action">
       <span class="archive-post-title">個人サイト構築成功</span>
@@ -332,6 +338,24 @@
 <!-- 主题的启动项 保持在最底部 -->
 <script  src="/wjnblog/js/boot.js" ></script>
 
+
+
+
+  <script>
+    (function(d,t) {
+      var BASE_URL="https://app.chatwoot.com";
+      var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=BASE_URL+"/packs/js/sdk.js";
+      s.parentNode.insertBefore(g,s);
+      g.onload=function(){
+        window.chatwootSDK.run({
+          websiteToken: 'RTcXzTZCmmbniKYzAUJ1UFEt',
+          baseUrl: BASE_URL
+        })
+      }
+    })(document,"script");
+  </script>
+  
 
 </body>
 </html>
