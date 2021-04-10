@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>Chatwootの導入</title>
+    <link href="/wjnblog/2021/04/10/Chatwoot%E3%81%AE%E5%B0%8E%E5%85%A5/"/>
+    <url>/wjnblog/2021/04/10/Chatwoot%E3%81%AE%E5%B0%8E%E5%85%A5/</url>
+    
+    <content type="html"><![CDATA[<p>今日はChatwootの導入したいです。前は自分のheroku環境にデプロイし、成功になったことがあります。<br>ただし、懸念事項はアラートメールの設定が失敗しました。今日は再チャレンジします。<br>#無料SMTPサーバー<br>最初自分のgmailで設定してみました。結果はダメです。原因が不明ですけど、恐らくgmailのサーバーは普通のと違うかもしれません。<br>インターネット上で似たようなクレームがいっぱいですから、時間を無駄しなくて、他の無料SMTPサーバーを探します。<br>最後は公式サイトでお勧めのSendGridを選びました。</p><p>#SendGrid</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>日本語</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>雑談</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>个人网站搭建成功</title>
     <link href="/wjnblog/2021/04/09/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E6%88%90%E5%8A%9F/"/>
     <url>/wjnblog/2021/04/09/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E6%88%90%E5%8A%9F/</url>
@@ -33,7 +58,7 @@
     <link href="/wjnblog/2021/04/09/%E5%80%8B%E4%BA%BA%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89%E6%88%90%E5%8A%9F/"/>
     <url>/wjnblog/2021/04/09/%E5%80%8B%E4%BA%BA%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89%E6%88%90%E5%8A%9F/</url>
     
-    <content type="html"><![CDATA[<p>やっと個人サイトが作りました。<br>静的なwebサイトですけど、なんとなく嬉しいです。<br>最初はWordPressで動的なwebサイトを作りたいです。でも、そうなると、AWS、herokuのようなクラウドが必要です。<br>貧乏人ですから、無料デプロイ先が欲しいです。それで、いろいろな苦戦していました。</p><h1 id="動的なwebサイトをチャレンジ"><a href="#動的なwebサイトをチャレンジ" class="headerlink" title="動的なwebサイトをチャレンジ"></a>動的なwebサイトをチャレンジ</h1><p>プログラムをデプロイする通常方法は２つがあります。<br>１、プログラムはそのままデプロイします。<br>２，Dockerのイメージにプログラムを入れて、デプロイします。<br>Dockerが知っていないので、先に方法１をめぐって調査します。</p><h2 id="heroku"><a href="#heroku" class="headerlink" title="heroku"></a>heroku</h2><p>まず試したのはherokuです。<br>私にとって一番よく知っているクラウドはherokuです。そして、無料プランの期間が無制限、制限があるところはdynoとDB容量です。<br>今回の仕様は一番シンプルサイトは十分ですので、デプロイできれば、一番楽だと思います。<br>公式サイトを読んで、５時間の乱暴に操作で意外にデプロイしました。とても嬉しいです。<br>「難しいではないですね。もしくは私がやっぱり一般人じゃないですか」と独り言をしました。<br>結果、調子を乗り過ぎました。。。。。<br>デプロイが確かに成功しましたが、長時間操作すると、変なエラーが出てきました。<br>WordPressが使っているDBはMySqlです。MySqlを提供している会社は他の会社です、heroku会社ではありません。それで、無料プランの容量が少ないし、制限が多くし、変なエラーが出てきたことは当然です。<br>「じゃ、MySqlを使わなく、PostgreSQLに変更して可能ですか」という考え方で続いて調査します。<br>※PostgreSQLはheroku会社が提供しているものです。無料プランであっても、そんな厳しくないです。</p><h2 id="Oracle-Cloud"><a href="#Oracle-Cloud" class="headerlink" title="Oracle Cloud"></a>Oracle Cloud</h2><h2 id="IBM-Cloud"><a href="#IBM-Cloud" class="headerlink" title="IBM Cloud"></a>IBM Cloud</h2><h2 id="aws"><a href="#aws" class="headerlink" title="aws"></a>aws</h2><p>awsの無料期間は１年しかないですが、面倒くさいと思います。</p><h1 id="静的なwebサイトを着手"><a href="#静的なwebサイトを着手" class="headerlink" title="静的なwebサイトを着手"></a>静的なwebサイトを着手</h1><p>動的なwebサイトを諦めました。</p>]]></content>
+    <content type="html"><![CDATA[<p>やっと個人サイトが作りました。<br>静的なwebサイトですけど、なんとなく嬉しいです。<br>最初はWordPressで動的なwebサイトを作りたいです。でも、そうなると、AWS、herokuのようなクラウドが必要です。<br>貧乏人ですから、無料デプロイ先が欲しいです。それで、いろいろな苦戦していました。</p><h1 id="動的なwebサイトをチャレンジ"><a href="#動的なwebサイトをチャレンジ" class="headerlink" title="動的なwebサイトをチャレンジ"></a>動的なwebサイトをチャレンジ</h1><p>プログラムをデプロイする通常方法は２つがあります。<br>１、プログラムはそのままデプロイします。<br>２，Dockerのイメージにプログラムを入れて、デプロイします。<br>Dockerが知っていないので、先に方法１をめぐって調査します。</p><h2 id="heroku"><a href="#heroku" class="headerlink" title="heroku"></a>heroku</h2><p>まず試したのはherokuです。<br>私にとって一番よく知っているクラウドはherokuです。そして、無料プランの期間が無制限、制限があるところはdynoとDB容量です。<br>今回の仕様は一番シンプルサイトは十分ですので、デプロイできれば、一番楽だと思います。<br>公式サイトを読んで、1時間の乱暴に操作で意外にデプロイしました。とても嬉しいです。<br>「難しいではないですね。もしくは私がやっぱり一般人じゃないですか」と独り言をしました。<br>結果、調子を乗り過ぎました。。。。。<br>デプロイが確かに成功しましたが、長時間操作すると、変なエラーが出てきました。<br>WordPressが使っているDBはMySqlです。herokuのMySqlプラグインを提供している会社は他の会社です、heroku会社ではありません。それで、無料プランの容量が少ないし、制限が多くし、変なエラーが出てきたことは当然です。<br>「じゃ、MySqlを使わなく、PostgreSQLに変更して可能ですか」という考え方で続いて調査します。<br>※PostgreSQLはheroku会社が提供しているものです。無料プランであっても、そんな厳しくないです。<br>5時間が経った後。諦めました。WordPressの開発言語がPHPです。僕は全く分かりません。そして、<br>インターネットで他の人が同じ希望もあって、やってみた結果は大部失敗しました。<br>方法２を試します。herokuはDockerのイメージを支えるけど、ファイル格納のような機能がついていません。Dockerの場合、dataが永続化のため、その機能がなければ、使えまえん。結果、またMySqlプラグインを利用する必要があります。<br>herokを諦めました。他の無料クラウドサービスを探します。</p><h2 id="AWS、AZURE"><a href="#AWS、AZURE" class="headerlink" title="AWS、AZURE"></a>AWS、AZURE</h2><p>業界に一番有名なクラウドはAWS、Azureですね。でも、欠点が同じです。<br>無料期間は１年しかないです。「１年後、どうしよう」という悩んでいます。諦めました。</p><h2 id="Oracle-Cloud"><a href="#Oracle-Cloud" class="headerlink" title="Oracle Cloud"></a>Oracle Cloud</h2><p>一瞬でOracleが頭に浮かびました。「いえ、無理です。これはオープンソース文化の敵です。無料はありえない。」<br>確認しましたが、やっぱり重要なサービスは有料です。諦めました。</p><h2 id="IBM-Cloud"><a href="#IBM-Cloud" class="headerlink" title="IBM Cloud"></a>IBM Cloud</h2><p>「もしオラクルはオープンソース文化の敵であれば、オープンソース文化の仲間は誰？」勿論IBMです。<br>探しましたが、IBM Cloudは永遠無料プランがあります。慈善家ですね。予想通りですね。<br>５時間ぐらいで試しましたが、悔しいですけど、諦めました。理由はドキュメントを理解しにくいです。そして、IBM Cloudは大幅に更新されることがあるので、コマンドが紛らわしい、他の人が作ったサンプルはほぼ古くなりました。非常に難航します。</p><h1 id="静的なwebサイトを着手"><a href="#静的なwebサイトを着手" class="headerlink" title="静的なwebサイトを着手"></a>静的なwebサイトを着手</h1><p>冷静に考えましたが、いままでの問題が構築したサイトは動的です。そうなると、静的なサイトはいかがでしょうか。<br>布団中に慎重に探しましたが、HEXOを選択しました。メリットとデメリットはわかりません、単なる感です。。（本当に慎重？）<br>１時間で試しましたが、私の感は正確であることを証明しました。使いやすいだけではなく、中国語のドキュメントもあります。そして、テーマも自由に使えます。（私は「fluid」テーマを採用しています）</p><p>最後、Githubにうっかりしてデプロイしました。最初の考えと違いますけど、とりあえず、いい加減にごまかします。</p><p>今後の作業はchatwootをサイトに導入し、オンラインチャットを実現するんです。</p>]]></content>
     
     
     <categories>
